@@ -1,0 +1,92 @@
+/* Video Area css
+============================================================================================ */
+.video_area{
+	background: url(../img/video-bg.jpg) no-repeat scroll center center;
+	background-size: cover;
+	padding: 100px 0px;
+	.video_text{
+		h6{
+			color: #fff;
+			font-size: 30px;
+			font-family: $play;
+			font-style: italic;
+			font-weight: normal;
+			position: relative;
+			display: inline-block;
+			&:before{
+				content: "";
+				width: 90px;
+				height: 1px;
+				background: rgba(255, 255, 255, .45);
+				position: absolute;
+				right: -115px;
+				bottom: 8px;
+			}
+		}
+		h3{
+			color: #fff;
+			font-size: 80px;
+			font-family: $pop;
+			font-weight: 600;
+		}
+		p{
+			color: #fff;
+			font-size: 20px;
+			font-weight: 300;
+			font-family: $open;
+			line-height: 28px;
+		}
+	}
+	.video_icon{
+		text-align: center;
+		margin-top: 45px;
+		a{
+			position: relative;
+			max-width: 272px;
+			width: 100%;
+			display: inline-block;
+			i{
+				height: 126px;
+				width: 126px;
+				border-radius: 50%;
+				text-align: center;
+				background: #fff;
+				font-size: 45px;
+				line-height: 126px;
+				color: $baseColor;
+			}
+			&:before{
+				content: "";
+				width: 272px;
+				height: 272px;
+				border-radius: 50%;
+				border: 1px solid rgba(255, 255, 255, .45);
+				position: absolute;
+				left: 1px;
+				top: -70px;
+				animation: runpulse 2s infinite linear;
+			}
+			&:after{
+				content: "";
+				width: 190px;
+				height: 190px;
+				border-radius: 50%;
+				border: 1px solid rgba(255, 255, 255, .45);
+				position: absolute;
+				left: 42px;
+				top: -30px;
+				animation: runpulse 2.5s infinite linear;
+			}
+		}
+		&.red_color{
+			a{
+				i{
+					background: $baseColor;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+/* End Video Area css
+============================================================================================ */

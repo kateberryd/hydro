@@ -1,0 +1,243 @@
+/* Client Slider Area css
+============================================================================================ */
+.client_slider_area{
+	background: #f4f5f8;
+	.client_slider{
+		border-bottom: 1px solid #e4e4e4;
+		.item{
+			padding-top: 40px;
+			padding-bottom: 40px;
+			line-height: 70px;
+			img{
+				line-height: 70px;
+				display: inline-block;
+			}
+		}
+	}
+}
+.client_slider{
+	.item{
+		line-height: 70px;
+		img{
+			line-height: 70px;
+			display: inline-block;
+		}
+	}
+}
+.tt_client_area.tt_7{
+	padding-bottom: 65px;
+}
+.tt_client_area{
+	padding-top: 80px;
+	.center_title{
+		margin-bottom: 45px;
+	}
+	.business_box{
+		margin-bottom: -65px !important;
+		margin-top: 80px;
+	}
+	&.single_client{
+		padding-top: 40px;
+		.client_slider{
+			margin-bottom: 0px;
+			border-bottom: 1px solid #e4e4e4;
+			padding-bottom: 35px;
+		}
+	}
+	&.testi_border{
+		padding-top: 0px;
+		.container{
+			padding-top: 80px;
+			border-top: 1px solid #e4e4e4;
+		}
+	}
+}
+/* End Client Slider Area css
+============================================================================================ */
+
+/* Client Result Area css
+============================================================================================ */
+.client_img_area{
+	.client_menu{
+		background: $blue;
+		margin-right: -15px;
+		background-color: rgb(40, 49, 120);
+		box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.26);
+		padding: 20px 35px 30px 35px;
+		height: 100%;
+		.nav{
+			li{
+				a{
+					font-size: 15px;
+					color: #b4b6c9;
+					font-family: $open;
+					font-weight: normal;
+					display: block;
+					border-bottom: 1px solid #42497f;
+					padding: 10px 0px;
+					@include transition;
+					position: relative;
+					&:before{
+						content: "";
+						background: $baseColor;
+						height: 34px;
+						width: 0px;
+						position: absolute;
+						left: -35px;
+						top: 50%;
+						transform: translateY(-50%);
+						opacity: 0;
+						@include transition;
+					}
+				}
+				
+				&:last-child{
+					a{
+						padding-bottom: 0px;
+						border-bottom: 0px;
+					}
+				}
+				&:hover, &.active{
+					a{
+						color: #fff;
+						&:before{
+							opacity: 1;
+							width: 4px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.client_img{
+		margin-left: -15px;
+	}
+}
+.client_result_list{
+	margin-top: 65px;
+	.result_text{
+		h3{
+			color: $blue;
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+		p{
+			margin-bottom: 28px;
+			&:last-child{
+				margin-bottom: 0px;
+			}
+		}
+	}
+}
+.result_list{
+	padding-left: 55px;
+	.card{
+		margin-bottom: 20px;
+		border: 2px solid #dbdbdb !important;
+		border-radius: 0px;
+		&:last-child{
+			margin-bottom: 0px;
+		}	
+		.card-header{
+			background: transparent;
+			padding: 0px;
+			button{
+				text-decoration: none;
+				padding: 16.5px 25px;
+				font-size: 18px;
+				color: $blue;
+				font-weight: 600;
+				font-family: $pop;
+				border: none;
+				position: relative;
+				display: block;
+				width: 100%;
+				text-align: left;
+				background: #f0f2f5;
+				i{
+					font-style: normal;
+					font-size: 28px;
+					font-weight: 600;
+					font-family: $pop;
+					color: #b7b9c4;
+					position: absolute;
+					right: 20px;
+					top: 50%;
+					transform: translateY(-50%);
+					display: none;
+					& + i{
+						display: inline-block;
+					}
+				}
+				&.collapsed{
+					background: #fff;
+					i{
+						display: inline-block;
+						& + i{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.card-body{
+			background: #f0f2f5;
+			padding-top: 5px;
+			padding-right: 25px;
+			padding-left: 25px;
+			padding-bottom: 30px;
+			.media{
+				margin-bottom: 0px;
+				.d-flex{
+					padding-right: 40px;
+				}
+				.media-body{
+					p{
+						max-width: 505px;
+						margin-bottom: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+/* End Client Result Area css
+============================================================================================ */
+
+/* Client Speak Area css
+============================================================================================ */
+.client_speak_area{
+	.single_br_title{
+		margin-bottom: 55px;
+	}
+	.testi_list{
+		border-bottom: 1px solid #e9e4e4;
+		padding-bottom: 80px;
+		margin-top: 80px;
+		&:nth-child(2){
+			margin-top: 0px; 
+		}
+		&:last-child{
+			margin-bottom: 0px;
+			padding-bottom: 0px;
+			border: none;
+		}
+		.col-lg-6{
+			&:nth-child(even){
+				.testi_item{
+					padding-right: 0px;
+					padding-left: 30px;
+				}
+			}
+		}
+		.testi_item{
+			padding: 0px;
+			background: #fff;
+			border: none;
+			padding-right: 10px;
+			
+		}
+	}
+}
+/* End Client Speak Area css
+============================================================================================ */

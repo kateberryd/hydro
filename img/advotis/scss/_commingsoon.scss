@@ -1,0 +1,168 @@
+/* Coming Soon Area css
+============================================================================================ */
+
+.coming_soon{
+    position: relative;
+    overflow: hidden;
+    background: url("../img/comming-soon-bg.jpg") no-repeat scroll center 0;
+	background-size: cover;
+   	min-height: 100vh;
+	padding: 160px 0px;
+    &:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+		background: rgba(21, 32, 86, .9);
+    }
+}
+.coming_soon_contain{
+    position: relative;
+    z-index: 1;
+}
+.welcome-text-area {
+    color: #ffffff;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    p{
+        font-size: 22px;
+        line-height: 34px;
+        font-weight: 600;
+        font-family: $pop;
+        padding-top: 60px;
+		max-width: 810px;
+		margin: auto;
+    }
+}
+.coming-header{
+    font: 700 60px $pop;
+    text-transform: capitalize;
+}
+.coming_soon_counter{
+    max-width: 800px;
+    margin: 80px auto 0px;
+    overflow: hidden;
+    .counter-item{
+        width: 170px;
+        border: 2px solid #fff;
+        height: 170px;
+        float: left;
+        padding: 35px 0px 33px 0px;
+        border-radius: 50%;
+        font-family: $open;
+        font-weight: bold;
+        color: #fff;
+        margin: 0px 15px;
+		font-family: $pop;
+        span{
+            font-size: 60px;
+            line-height: 60px;
+			margin-bottom: 0px;
+        }
+        .smalltext{
+            font-size: 18px;
+            line-height: 40px;
+            letter-spacing: 0px;
+            text-transform: uppercase;
+            position: relative;
+        }
+    }
+}
+
+.c-search-form{
+    max-width: 755px;
+    margin: 60px auto 0px;
+    .input-group{
+        .form-control{
+            border: 0px;
+            color: #797979;
+            padding-left: 30px;
+            font: normal 17px $open;
+            letter-spacing: 0.26px;
+            background:#fff;
+            height: 57px;
+            padding: 0px 30px;
+            border-radius: 0px;
+			border: none;
+			box-shadow: none;
+            @include placeholder{
+                color: #6d6d6d;
+				font-size: 17px;
+				font-family: $open;
+				font-weight: normal;
+            }
+        }
+        .input-group-addon{
+            background: none;
+            box-shadow: none;
+            border: 0px;
+            padding: 0px;
+			margin-left: 22px;
+            button{
+                letter-spacing: 0.44px;
+                border: 0px;
+                border-radius: 0px;
+                color: #fff;
+				height: 57px;
+                background: $baseColor;
+                transition: all 0.3s linear;
+				outline: none !important;
+				box-shadow: none !important;
+				font-size: 13px;
+				font-family: $pop;
+				font-weight: 600;
+				width: 200px;
+				text-align: center;
+				cursor: pointer;
+				position: relative;
+				overflow: hidden;
+				text-transform: uppercase;
+				line-height: 57px;
+				&:before{
+					background: #fff;
+					content: "";
+					height: 155px;
+					left: -75px;
+					opacity: .2;
+					position: absolute;
+					top: -50px;
+					-webkit-transform: rotate(35deg);
+					transform: rotate(35deg);
+					-webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+					transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+					width: 50px;
+				}
+                &:hover,&:focus{
+                    background: $baseColor;
+                    color: #fff; 
+                    outline: none;
+					&:before{
+						left: 120%;
+						-webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+						transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+					}
+                }
+            }
+        }
+    }
+}
+/* End Coming Soon Area css
+============================================================================================ */

@@ -1,0 +1,107 @@
+/* Team Area css
+============================================================================================ */
+.our_team_area{
+	background: #f2f2f3;
+	.studies_title{
+		margin-bottom: 70px;
+	}
+	&.white_bg{
+		background: #fff;
+	}
+}
+.tema_inner{
+	margin-bottom: -20px;
+}
+.team_item{
+	position: relative;
+	margin-bottom: 20px;
+	overflow: hidden;
+	.team_img{
+		position: relative;
+		z-index: 3;
+		img{
+			transform: scale(1);
+			transition: all 300ms ease;
+		}
+		&:before{
+			content: "";
+			background: url(../img/team/team-shadow.jpg) no-repeat scroll center;
+			position: absolute;
+			left: 0px;
+			bottom: 0px;
+			width: 100%;
+			min-height: 174px;
+			z-index: 1;
+		}
+		&:after{
+			content: "";
+			background: rgba(40, 49, 120, .6);
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			transition: all 300ms ease;
+			opacity: 0;
+			z-index: 2;
+		}
+	}
+	.team_text{
+		position: absolute;
+		left: 0px;
+		bottom: -26px;
+		width: 100%;
+		text-align: center;
+		color: #fff;
+		@include transition;
+		z-index: 3;
+		h4{
+			color: #fff;
+			font-size: 18px;
+			font-family: $pop;
+			font-weight: 600;
+		}
+		h5{
+			font-size: 15px;
+			font-family: $pop;
+			font-weight: 300;
+			margin-bottom: 0px;
+		}
+		ul{
+			text-align: center;
+			justify-content: center;
+			margin-top: 22px;
+			opacity: 0;
+			
+			li{
+				margin-right: 22px;
+				&:last-child{
+					margin-right: 0px;
+				}
+				a{
+					color: #fff;
+					font-size: 22px;
+				}
+			}
+		}
+	}
+	&:hover{
+		.team_img{
+			&:after{
+				opacity: 1;
+			}
+			img{
+				transform: scale(1.1);
+			}
+		}
+		.team_text{
+			bottom: 27px;
+			ul{
+				opacity: 1;
+				transition: all 600ms ease-in;
+			}
+		}
+	}
+}
+/* End Team Area css
+============================================================================================ */

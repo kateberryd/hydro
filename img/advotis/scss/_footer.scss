@@ -1,0 +1,264 @@
+/* Footer Area css
+============================================================================================ */
+.footer_area{
+	background: #eff0f3;
+	padding-top: 160px;
+	&.footer_two{
+		background: linear-gradient(
+			rgba(37, 43, 72, .94), 
+			rgba(37, 43, 72, .94)
+        ),
+        url(../img/footer-bg.jpg) no-repeat scroll center center;
+		background-size: cover;
+		.f_title{
+			h3{
+				color: #fff;
+			}
+		}
+		.ab_widget{
+			p{
+				color: #fff;
+			}
+			h6{
+				color: #fff;
+			}
+			a{
+				color: #fff;
+			}
+		}
+		.link_widget{
+			.nav{
+				li{
+					a{
+						color: rgba(255, 255, 255, .60);
+					}
+				}
+			}
+		}
+		.news_widget{
+			.nav{
+				li{
+					a{
+						color: #fff;
+					}
+					&:hover{
+						a{
+							border-color: $baseColor;
+							background: $baseColor;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+		.footer_bottom{
+			.d-flex{
+				border-top: 1px solid #434968;  
+				&:before{
+					display: none;
+				}
+			}
+		}
+	}
+	&.space_reduce{
+		padding-top: 100px;
+	}
+}
+.footer_top{
+	padding-bottom: 40px;
+}
+.f_widget{
+	
+}
+.ab_widget{
+	img{
+		margin-bottom: 20px;
+	}
+	p{
+		font-size: 14px;
+		color: #8b8b8b;
+		line-height: 26px;
+		margin-bottom: 18px;
+	}
+	h6{
+		font-size: 14px;
+		color: #bababa;
+		font-family: $open;
+		font-weight: bold;
+		font-style: italic;
+		margin-bottom: 10px;
+	}
+	a{
+		font-size: 18px;
+		color: $blue;
+		font-family: $open;
+		font-weight: normal;
+	}
+}
+.f_title{
+	margin-bottom: 30px;
+	h3{
+		font-size: 20px;
+		font-weight: 600;
+		color: $blue;
+		display: table-cell;
+		width: 1%;
+		white-space: nowrap;
+		padding-right: 20px;
+	}
+	span{
+		height: 1px;
+		background: radial-gradient(circle #d6d8de 67%, #d6d8de 100%);
+		background-position: 50% 65%;
+		background-size: 4px 1px;
+		background-repeat: repeat-x;
+		display: table-cell;
+		width: 98%;
+		z-index: 1;
+		position: relative;
+	}
+	&.br_title{
+		margin-bottom: 45px;
+		h3{
+			font-size: 32px;
+		}
+	}	
+}
+.link_widget{
+	padding-left: 40px;
+	max-width: 370px;
+	.nav{
+		display: inline-block;
+		width: calc(100% / 2);
+		float: left;
+		overflow: hidden;
+		li{
+			margin-bottom: 15px;
+			&:last-child{
+				margin-bottom: 0px;
+			}
+			a{
+				font-size: 14px;
+				font-family: $open;
+				font-weight: normal;
+				color: #8b8b8b;
+			}
+		}
+	}
+}
+.news_widget{
+	p{
+		font-size: 14px;
+		color: #8b8b8b;
+		font-family: $open;
+		font-weight: normal;
+	}
+	.input-group{
+		margin-bottom: 28px;
+		input{
+			height: 45px;
+			background: #fff;
+			border-color: #eaeaeb;
+			border-radius: 3px;
+			padding: 0px 20px;
+			outline: none;
+			box-shadow: none;
+			border-right: 0px;
+			font-size: 14px;
+			font-family: $open;
+			font-weight: normal;
+			color: #838486;
+			@include placeholder{
+				font-size: 14px;
+				font-family: $open;
+				font-weight: normal;
+				color: #838486;
+			}
+		}
+		.input-group-append{
+			margin: 0px;
+			.btn{
+				background: $blue;
+				color: #fff;
+				width: 54px;
+				border: none;
+				outline: none !important;
+				box-shadow: none !important;
+				height: 45px;
+				padding: 0px;
+				text-align: center;
+				line-height: 45px;
+			}
+		}
+	}
+	.nav{
+		li{
+			margin-right: 13px;
+			a{
+				display: inline-block;
+				height: 36px;
+				width: 36px;
+				border: 1px solid #858585;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 34px;
+				font-size: 16.92px;
+				color: #858585;
+			}
+			&:last-child{
+				margin-right: 0px;
+			}
+			&:hover{
+				a{
+					border-color: $blue;
+					background: $blue;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.footer_bottom{
+	.d-flex{
+		border-top: 1px solid #ffffff;
+		position: relative;
+		padding: 25px 0px;
+		&:before{
+			content: "";
+			position: absolute;
+			left: 0px;
+			top: -2px;
+			height: 1px;
+			width: 100%;
+			background: #dcdcdc;
+		}
+	}
+	.left{
+		p{
+			font-family: $open;
+			font-weight: normal;
+			color: #8b8b8b;
+			font-size: 14px;
+			margin-bottom: 0px;
+		}
+	}
+	.right{
+		p{
+			font-family: $open;
+			font-weight: normal;
+			color: #8b8b8b;
+			font-size: 14px;
+			margin-bottom: 0px;
+			a{
+				font-family: $open;
+				font-weight: normal;
+				color: #8b8b8b;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+/* End Footer Area css
+============================================================================================ */

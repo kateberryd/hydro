@@ -1,0 +1,1724 @@
+/* Our Company Area css
+============================================================================================ */
+.our_company_area{
+	background: #eceff3;
+	position: relative;
+	z-index: 2;
+	&:before{
+		content: "";
+		height: 485px;
+		background: #302c38;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+	}
+	&.our_company_two{
+		background: #efefef;
+		padding-bottom: 60px;
+		&:before{
+			display: none;
+		}
+		.our_company_inner{
+			.company_item{
+				box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+			}
+		}
+		.company_single_text{
+			padding-bottom: 0px;
+			p{
+				a{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+.our_company_inner{
+	.company_sub_title{
+		h5{
+			color: #f14141;
+			font-family: $play;
+			font-style: italic;
+			font-size: 22px;
+			font-weight: normal;
+			margin-bottom: 20px;
+		}
+		h4{
+			color: #fff;
+			font-size: 26px;
+			font-family: $pop;
+			font-weight: 500;
+			margin-right: -14px;
+			margin-bottom: 56px;
+		}
+	}
+	.company_desc{
+		p{
+			color: #fff;
+			opacity: .6;
+			font-size: 16px;
+			font-family: $open;
+			font-weight: normal;
+			line-height: 28px;
+			margin-top: 18px;
+			margin-bottom: 0px;
+		}
+	}
+}
+.company_item{
+	background: #fff;
+	.company_img{
+		overflow: hidden;
+		z-index: 3;
+		position: relative;
+		&:before{
+			content: "";
+			background: rgba(0, 0, 0, .4);
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			opacity: 0;
+			transition: all 300ms ease;
+		}
+		img{
+			transform: scale(1);
+			transition: all 300ms ease-out;
+		}
+	}
+	.company_text{
+		text-align: center;
+		padding: 32px 20px 32px 20px;
+		h4{
+			color: $blue;
+			font-size: 20px;
+			font-family: $open;
+			margin-bottom: 15px;
+			&:hover{
+				color: $baseColor;
+				@include transition;
+			}
+		}
+		p{
+			line-height: 24px;
+			font-family: $open;
+			font-size: 15px;
+		}
+	}
+	&:hover{
+		.company_img{
+			&:before{
+				opacity: 1;
+			}
+			img{
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+.company_single_text{
+	text-align: center;
+	padding: 45px 0px;
+	p{
+		font-family: $pop;
+		font-size: 16px;
+		color: #766e86;
+		margin-bottom: 0px;
+		a{
+			text-decoration: underline;
+			color: #4f4fa2;
+		}
+	}
+}
+.our_service_area{
+	.main_title{
+		margin-right: -35px;
+		margin-bottom: 20px;
+	}
+	.service_slider{
+		.item{
+			padding-top: 20px;
+		}
+		.service_arrow{
+			position: absolute;
+			right: 0px;
+			top: -80px;
+			.owl-prev, .owl-next{
+				border: 2px solid #c2c2c2;
+				padding: 0px;
+				width: 46px;
+				height: 46px;
+				color: #c2c2c2;
+				font-size: 22.47px;
+				background: transparent;
+				line-height: 20xp;
+			}
+			.owl-prev{
+				margin-right: 10px;
+			}
+		}
+	}
+	.company_item{
+		.company_img_inner{
+			box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+		}
+		.company_img{
+		}
+		.company_text{
+			border: 1px solid #dedede;
+		}
+	}
+}
+/* End Our Company Area css
+============================================================================================ */
+
+/* Company Mission Area css
+============================================================================================ */
+.company_mission_area{
+	&.mission_red{
+		.container{
+			border-top: 1px solid #dddddd;
+			padding-top: 100px;
+		}
+		.mission_img{
+			.company_about{
+				background: $baseColor;
+				p{
+					opacity: .8;
+				}
+			}
+		}
+	}
+}
+.mission_img{
+	position: relative;
+	margin-bottom: 20px;
+	.company_about{
+		background: $blue;
+		position: absolute;
+		right: 0px;
+		bottom: -20px;
+		max-width: 320px;
+		width: 100%;
+		padding: 35px 30px 35px 30px;
+		h4{
+			color: #fff;
+			margin-bottom: 15px;
+			font-size: 20px;
+			font-family: $pop;
+			font-weight: 500;
+		}
+		p{
+			margin-bottom: 0px;
+			color: #fff;
+			opacity: .45;
+		}
+	}
+}
+.mission_text{
+	padding-left: 45px;
+	h3{
+		font-size: 32px;
+		line-height: 40px;
+		color: $blue;
+		font-family: $pop;
+		font-weight: bold;
+		margin-bottom: 18px;
+	}
+	h5{
+		font-size: 16px;
+		font-family: $open;
+		font-weight: normal;
+		line-height: 26px;
+		color: $blue;
+		margin-bottom: 33px;
+	}
+	p{
+		margin-bottom: 20px;
+	}
+}
+/* End Company Mission Area css
+============================================================================================ */
+
+/* Case Area css
+============================================================================================ */
+.case_area{
+	background: #eceff3;
+}
+.case_item{
+	.case_img{
+		position: relative;
+		overflow: hidden;
+		z-index: 3;
+		img{
+			-webkit-filter: grayscale(100%); 
+			filter: grayscale(100%);
+			transform: scale(1);
+			transition: all 300ms ease-out;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			background: #283178; /* Old browsers */
+			background: -moz-linear-gradient(top, #aab1bf 1%, #283178 100%); 
+			background: -webkit-linear-gradient(top, #aab1bf 1%,#283178 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aab1bf', endColorstr='#283178',GradientType=0 ); /* IE6-9 */
+			z-index: 1;
+			opacity: .55;
+			@include transition;
+		}
+	}
+	.case_text{
+		h4{
+			font-size: 16px;
+			color: $blue;
+			font-family: $pop;
+			font-weight: 600;
+			margin-top: 25px;
+		}
+		p{
+			margin-bottom: 0px;
+		}
+	}
+	&:hover{
+		.case_img{
+			img{
+				filter: grayscale(0);
+				transform: scale(1.05);
+			}
+			&:before{
+				opacity: 0;
+			}
+		}
+		
+	}
+}
+.case_slider_inner{
+	padding-right: 30px;
+}
+.case_slider{
+	.item{
+		h4{
+			color: $blue;
+			font-size: 32px;
+			font-weight: bold;
+			font-family: $pop;
+			margin-bottom: 18px;
+		}
+		p{
+			margin-bottom: 30px;
+			color: #898989;
+		}
+	}
+	.owl-prev, .owl-next{
+		height: 42px;
+		width: 42px;
+		border-radius: 50%;
+		border: 2px solid #aaaaaa;
+		background: transparent;
+		text-align: center;
+		line-height: 34px;
+		padding: 0px;
+		@include transition;
+		font-size: 18px;
+		color: #8e8e8e;
+		display: inline-block;
+		&:hover{
+			background: $baseColor;
+			border-color: $baseColor;
+			color: #fff;
+		}
+	}
+	.owl-prev{
+		margin-right: 20px;
+	}
+	.owl-next{
+		
+	}
+}
+
+.case_studies_two{
+	.studies_two_inner{
+		margin-bottom: -50px;
+	}
+	.main_title{
+		h2{}
+		p{
+			font-size: 18px;
+			font-family: $pop;
+			line-height: 29px;
+			font-weight: normal;
+			a{
+				text-decoration: underline;
+				font-style: italic;
+				color: $pfont;
+				font-weight: 600;
+			}
+		}
+	}
+	&.studies_title{
+		margin-bottom: 0px;
+		.main_title{
+			p{
+				font-size: 24px;
+				color: $blue;
+				line-height: 36px;
+				a{
+					color: $blue;
+				}
+			}
+		}
+	}
+}
+.studies_item{
+	margin-bottom: 50px;
+	.studies_img{
+		position: relative;
+		box-shadow: 0px 3px 27px 0px rgba(0, 0, 0, 0.15);
+		overflow: hidden;
+		z-index: 3;
+		img{
+			filter: grayscale(100%);
+			transition: all 300ms ease;
+			box-shadow: 0px 3px 27px 0px rgba(0, 0, 0, 0.15);
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			background: #283178; /* Old browsers */
+			background: -moz-linear-gradient(top, #aab1bf 1%, #283178 100%); 
+			background: -webkit-linear-gradient(top, #aab1bf 1%,#283178 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aab1bf', endColorstr='#283178',GradientType=0 ); /* IE6-9 */
+			z-index: 1;
+			opacity: .55;
+			@include transition;
+		}
+		.reply{
+			position: absolute;
+			right: 17px;
+			top: 17px;
+			z-index: 2;
+		}
+		.img_tt{
+			position: absolute;
+			bottom: 20px;
+			left: 0px;
+			z-index: 2;
+			h3{
+				padding: 0px 18px 0px 18px;
+				color: #fff;
+				margin-bottom: 0px;
+				font-size: 25px;
+				line-height: 34px;
+			}
+		}
+	}
+	.studies_content{
+		border: 1px solid #e9e9ea;
+		border-top: 0px;
+		padding-top: 32px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 35px;
+		h4{
+			font-size: 18px;
+			font-family: $pop;
+			font-weight: 600;
+			color: $blue;
+			margin-bottom: 12px;
+		}
+		p{
+			line-height: 24px;
+			font-weight: normal;
+			font-size: 15px;
+			margin-bottom: 0px;
+			font-family: $open;
+		}
+	}
+	&:hover{
+		.studies_img{
+			> img{
+				filter: grayscale(0%);
+				transform: scale(1.1);
+			}
+			&:before{
+				opacity: 0;
+			}
+		}
+	}
+	&.bg{
+		background: #f2f2f3;
+		.studies_content{
+			border: none;
+		}
+	}
+}
+
+/* End Case Area css
+============================================================================================ */
+
+/* Feature Content Area css
+============================================================================================ */
+.feature_area{
+	background-image: linear-gradient(to bottom, rgba(37, 43, 72, 0.40) 0%, rgba(37, 43, 72, 0.40) 100%), url(../img/feature/feature-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	&.feature_person_two{
+		background: url(../img/feature/feature-bg-2.jpg) no-repeat scroll center center;
+		background-size: cover;
+		.feature_title_text{
+			h2{
+				color: $blue;
+			}
+			p{
+				color: $dip;
+				opacity: 1;
+			}
+		}
+		.feature_item_inner{
+			.media{
+				.media-body{
+					h4{
+						color: $blue;
+					}
+					p{
+						color: $pfont;
+					}
+				}
+			}
+		}
+		.feature_person_img{
+			background: #fff;
+			.feature_person_text{
+				h4{
+					color: $blue;
+				}
+				h5{
+					color: #000;
+				}
+				h6{
+					color: $baseColor;;
+				}
+				.mail{
+					color: #000;
+					i{
+						color: $baseColor;
+					}
+				}
+			}
+		}
+	}
+	&.feature_three{
+		.feature_person_img{
+			background: $baseColor;
+		}
+	}
+}
+.feature_title_text{
+	max-width: 770px;
+	position: relative;
+	margin-bottom: 50px;
+	padding-bottom: 7px;
+	&:before{
+		content: "";
+		width: 115px;
+		background: #fff;
+		opacity: .6;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		height: 1px;
+	}
+	h2{
+		font-size: 40px;
+		color: #fff;
+		font-weight: 600;
+		font-family: $pop;
+		margin-bottom: 20px;
+		span{
+			font-weight: 300;
+		}
+	}
+	p{
+		font-size: 24px;
+		font-family: $pop;
+		font-weight: 300;
+		color: #fff;
+		opacity: .6;
+		line-height: 38px;
+	}
+}
+.feature_item_inner{
+	.media{
+		margin-bottom: 35px;
+		.d-flex{
+			padding-right: 25px;
+		}
+		.media-body{
+			h4{
+				font-size: 23px;
+				color: #de3939;
+				font-family: $pop;
+				margin-bottom: 6px;
+			}
+			p{
+				margin-bottom: 0px;
+				font-family: $open;
+				font-weight: 300;
+				font-size: 18px;
+				color: #c0c3d0;
+			}
+		}
+		&:nth-child(2){
+			.media-body{
+				h4{
+					color: #23d81e;
+				}
+			}
+		}
+		&:nth-child(3){
+			.media-body{
+				h4{
+					color: #03b2d7;
+				}
+			}
+		}
+	}
+}
+.feature_person_img{
+	position: relative;
+	overflow: hidden;
+	background: #9bb1d1;
+	min-height: 500px;
+	img{
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+	}
+	.feature_person_text{
+		position: absolute;
+		left: 0px;
+		top: 45px;
+		width: 100%;
+		padding: 0px 25px; 
+		h4{
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-family: $pop;
+			font-weight: 500;
+			letter-spacing: 3.5px;
+			line-height: 24px;
+			margin-bottom: 22px;
+		}
+		h5{
+			font-size: 18px;
+			color: #fff;
+			font-family: $pop;
+			font-weight: 500;
+		}
+		h6{
+			color: #fff;
+			font-family: $pop;
+			font-weight: 300;
+			font-size: 20px;
+			margin-bottom: 26px;
+		}
+		.mail{
+			font-size: 16px;
+			font-family: $pop;
+			font-weight: 300;
+			color: #000;
+			i{
+				margin-left: 16px;
+				color: #811042;
+			}
+		}
+	}
+}
+/* End Feature Content Area css
+============================================================================================ */
+
+/* Industries Area css
+============================================================================================ */
+.industries_area{
+	background: #e9eaee;
+	.more_btn{
+		text-align: center;
+		text-decoration: underline;
+		display: block;
+		margin-top: 45px;
+		margin-bottom: 90px;
+	}
+	&.p_100{
+		.more_btn{
+			margin-bottom: 0px;
+		}
+	}
+	&.industries_two{
+		background: #fff;
+		.industries_key_feature{
+			.col-lg-2{
+				border: none;
+				border-width: 1px;
+				@include transition;
+				&:hover{
+					border-color: rgb(238, 238, 238);
+					background-color: rgb(255, 255, 255);
+					box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.09);
+				}
+			}
+		}
+	}
+}
+.industries_key_feature{
+	background: #fff;
+	.row{
+		margin: 0px;
+	}
+	.col-lg-2{
+		padding: 0px;
+		border-right: 2px solid #e9eaee;
+		&:last-child{
+			
+		}
+	}
+	.int_key_item{
+		text-align: center;
+		padding: 42px 15px 42px 15px;
+		@include transition;
+		h4{
+			font-size: 16px;
+			font-family: $pop;
+			font-weight: bold;
+			color: $blue;
+			margin-top: 25px;
+			margin-bottom: 0px;
+			line-height: 26px;
+		}
+		&:hover{
+			box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+.business_box_area{
+	margin-top: -135px;
+}
+.business_box{
+	margin-bottom: -200px !important;
+	position: relative;
+	.left_box{
+		background: url(../img/industries-2.png) no-repeat scroll center center;
+		background-size: cover;
+		padding: 63px 45px 63px 45px;
+		height: 100%;
+		h4{
+			font-size: 40px;
+			line-height: 58px;
+			color: $blue;
+			font-weight: bold;
+			margin-bottom: 18px;
+			span{
+				display: block;
+				font-weight: 300;
+			}
+		}
+		p{
+			max-width: 385px;
+			margin-bottom: 35px;
+		}
+	}
+	.right_box{
+		background-image: -moz-linear-gradient( 90deg, rgb(80,90,123) 0%, rgb(172,178,204) 100%);
+		background-image: -webkit-linear-gradient( 90deg, rgb(80,90,123) 0%, rgb(172,178,204) 100%);
+		background-image: -ms-linear-gradient( 90deg, rgb(80,90,123) 0%, rgb(172,178,204) 100%);
+		position: relative;
+		height: 100%;
+		padding: 63px 45px 63px 45px;
+		&:before{
+			content: "";
+			background: url(../img/icon/int-icon-1.png) no-repeat center center;
+			width: 246px;
+			height: 296px;
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+		}
+		h4{
+			font-size: 40px;
+			line-height: 58px;
+			color: #fff;
+			font-weight: bold;
+			margin-bottom: 18px;
+			span{
+				display: block;
+				font-weight: 300;
+			}
+		}
+		p{
+			max-width: 385px;
+			margin-bottom: 35px;
+			color: #fff;
+		}
+	}
+}
+
+/* End Industries Area css
+============================================================================================ */
+
+/* Approach Area css
+============================================================================================ */
+.approach_area{
+	
+}
+.ap_consultaton{
+	.consult_blue{
+		background: #123495;
+		height: 100%;
+		padding: 70px 55px 70px 40px;
+		h6{
+			font-family: $lora;
+			font-style: italic;
+			font-size: 22px;
+			font-weight: normal;
+			color: #fff;
+			margin-bottom: 16px;
+		}
+		p{
+			font-size: 20px;
+			font-family: $open;
+			font-weight: 300;
+			line-height: 32px;
+			color: #fff;
+			margin-bottom: 60px;
+			position: relative;
+			&:before{
+				content: "";
+				height: 1px;
+				width: 76px;
+				background: rgba(255, 255, 255, .23);
+				position: absolute;
+				left: 0px;
+				bottom: -30px;
+			}
+		}
+		h5{
+			color: #fff;
+			font-size: 30px;
+			font-family: $pop;
+			font-weight: 600;
+		}
+	}
+	.d-flex{
+		border-bottom: 1px solid #e5e5e5;
+		margin-left: -15px;
+	}
+	.consult_money{
+		vertical-align: middle;
+		align-self: center;
+		padding-left: 40px;
+		h4{
+			font-size: 28px;
+			font-family: $pop;
+			font-weight: 600;
+			line-height: 40px;
+			color: $dip;
+			margin-bottom: 22px;
+		}
+		p{
+			font-size: 16px;
+			line-height: 26px;
+			font-family: $open;
+			font-weight: normal;
+			margin-bottom: 26px;
+		}
+		.more_btn{
+			text-decoration: underline;
+		}
+	}
+}
+.approach_inner{
+	.approach_text{
+		padding-right: 65px;
+		h4{
+			font-size: 35px;
+			font-family: $pop;
+			font-weight: 600;
+			color: $dip;
+			margin-bottom: 22px;
+		}
+		h6{
+			font-size: 20px;
+			font-family: $lora;
+			font-style: italic;
+			font-weight: normal;
+			line-height: 28px;
+			color: $dip;
+			margin-bottom: 25px;
+		}
+		p{
+			color: #898989;
+			margin-bottom: 25px;
+		}
+		.main_btn{
+			font-size: 16px;
+			font-family: $pop;
+			font-weight: 500;
+			line-height: 48px;
+			border-radius: 24px;
+			padding: 0px 33px;
+		}
+	}
+	.ap_saving{
+		box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+		text-align: center;
+		padding: 36px 35px 30px 35px;
+		img{
+			margin-bottom: 22px;
+		}
+		h4{
+			font-size: 18px;
+			font-family: $open;
+			font-weight: 600;
+			color: $dip;
+			margin-bottom: 10px;
+		}
+		p{
+			font-size: 15px;
+			font-family: $open;
+			line-height: 26px;
+			margin-bottom: 15px;
+		}
+		i{
+			font-weight: bold;
+			color: #1f49c3;
+		}
+	}
+}
+/* End Approach Area css
+============================================================================================ */
+
+/* Core Area css
+============================================================================================ */
+.our_core_area{
+	&.core_area_two{
+		background: #f0f2f5;
+		.core_left_text{
+			h3{
+				color: $blue;
+				margin-bottom: 0px;
+				font-size: 38px;
+				font-family: $pop;
+				font-weight: bold;
+				line-height: 42px;
+			}
+		}
+		.core_inner{
+			margin-bottom: 0px;
+			border-bottom: 0px;
+			padding-bottom: 0px;
+		}
+	}
+	&.core_top{
+		margin-top: -214px;
+		padding-top: 214px;
+	}
+}
+.core_inner{
+	border-bottom: 1px solid #d3d3d3;
+	padding-bottom: 75px;
+	margin-bottom: 75px;
+	.core_text{
+		padding-left: 70px;
+		h4{
+			line-height: 55px;
+			font-size: 38px;
+			color: $blue;
+			font-family: $pop;
+		}
+		p{
+			font-size: 24px;
+			line-height: 37px;
+			font-family: $open;
+			font-weight: 300;
+			color: #333333;
+			margin-bottom: 45px;
+			a{
+				font-family: $open;
+				font-weight: 300;
+				font-style: italic;
+				color: $blue;
+				text-decoration: underline;
+			}
+		}
+	}
+	.core_value{
+		text-align: center;
+		h6{
+			font-size: 55px;
+			font-family: $pop;
+			font-weight: 100;
+			color: $blue;
+			line-height: 26px;
+		}
+		h4{
+			font-size: 16px;
+			font-family: $pop;
+			font-weight: 600;
+			margin-bottom: 0px;
+		}
+	}
+}
+.ap_service{
+	margin-bottom: -50px;
+}
+.ap_service_item{
+	margin-bottom: 50px;
+	h4{
+		color: $blue;
+		font-family: $pop;
+		font-weight: bold;
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+	p{
+		font-size: 15px;
+		line-height: 26px;
+		max-width: 335px;
+		margin-bottom: 14px;
+	}
+	.more_btn{
+		text-decoration: underline;
+	}
+}
+/* End Core Area css
+============================================================================================ */
+
+/* Effective Area css
+============================================================================================ */
+.effective_area{
+	display: flex;
+	background: $blue;
+	overflow: hidden;
+	.left_text{
+		width: calc(50% + 115px);
+		.effect_text_inner{
+			max-width: 700px;
+			float: right;
+			padding-right: 75px;
+			color: #fff;
+			display: flex;
+			flex-wrap:wrap;
+			justify-content: center;
+			flex-direction: column;
+			height: 100%;
+			.effect_text{
+				h3{
+					font-size: 32px;
+					line-height: 42px;
+					font-family: $pop;
+					font-weight: 600;
+					margin-bottom: 15px;
+				}
+				> p{
+					font-size: 16px;
+					line-height: 26px;
+					font-family: $open;
+					font-weight: normal;
+					color: rgba(255, 255, 255, .50);
+					margin-bottom: 38px;
+				}
+			}
+		}
+	}
+	.right_img{
+		width: calc(50% - 115px);
+		text-align: right;
+	}
+	&.effective_two{
+		margin-top: -60px;
+		background: #fff;
+		padding-top: 100px;
+		.effect_inner{
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			background: $blue;
+		}
+		.right_img{
+			margin-bottom: 130px;
+			margin-top: -40px;
+			display: inline-block;
+			img{
+				-webkit-box-shadow: 0px 0px 42px -6px rgba(0,0,0,0.5);
+				-moz-box-shadow: 0px 0px 42px -6px rgba(0,0,0,0.5);
+				box-shadow: 0px 0px 42px -6px rgba(0,0,0,0.5);
+			}
+		}
+	}
+}
+.effect_item_inner{
+	.col-sm-6{
+		&:last-child{
+			.effect_item{
+				padding-left: 25px;
+				&:before{
+					display: none;
+				}
+			}
+		}
+	}
+	.effect_item{
+		position: relative;
+		&:before{
+			content: "";
+			height: 210px;
+			width: 1px;
+			background: rgba(255, 255, 255, .15);
+			position: absolute;
+			right: -6px;
+			top: 0px;
+		}
+		i{
+			font-size: 60px;
+			line-height: 60px;
+			margin-bottom: 24px;
+			display: block;
+			&:before{
+				font-size: 60px;
+			}
+		}
+		h4{
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 10px;
+		}
+		p{
+			font-size: 15px;
+			opacity: .5;
+		}
+	}
+}
+
+/* End Effective Area css
+============================================================================================ */
+
+/* Studies Area css
+============================================================================================ */
+.studies_two_area{
+	
+}
+.studies_item_inner{
+	margin-bottom: -50px;
+}
+.studies_item{
+	.media{
+		background: #f2f2f3;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-left: 100px;
+		.d-flex{
+			margin-left: -100px;
+			position: relative;
+			z-index: 2;
+			overflow: hidden;
+			&:before{
+				content: "";
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				height: 100%;
+				background: #283178;
+				background: -moz-linear-gradient(top, #aab1bf 1%, #283178 100%);
+				background: -webkit-linear-gradient(top, #aab1bf 1%, #283178 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aab1bf', endColorstr='#283178',GradientType=0 );
+				z-index: 1;
+				opacity: .55;
+				-webkit-transition: all 300ms linear 0s;
+				-o-transition: all 300ms linear 0s;
+				transition: all 300ms linear 0s;
+			}
+			img{
+				box-shadow: 0px 3px 27px 0px rgba(0, 0, 0, 0.15);
+				filter: grayscale(100%);
+				transition: all 300ms linear 0s;
+			}
+			h4{
+				position: absolute;
+				left: 0px;
+				bottom: 0px;
+				z-index: 2;
+				color: #fff;
+				padding: 0px 6px 0px 12px;
+				font-size: 22px;
+				line-height: 30px;
+				margin-bottom: 25px;
+			}
+			.reply{
+				position: absolute;
+				right: 20px;
+				top: 20px;
+				z-index: 2;
+			}
+		}
+		.media-body{
+			vertical-align: middle;
+			align-self: center;
+			padding-right: 20px;
+			padding-left: 30px;
+			h4{
+				color: $blue;
+				font-size: 16px;
+				font-weight: bold;
+				text-transform: uppercase;
+				margin-bottom: 6px;
+				line-height: 24px;
+			}
+			p{
+				font-size: 15px;
+				line-height: 26px;
+				font-family: $open;
+			}
+		}
+		&:hover{
+			.d-flex{
+				img{
+					filter: grayscale(0);
+					transform: scale(1.05);
+				}
+				&:before{
+					opacity: 0;
+				}
+			}
+		}
+	}
+}
+/* End Studies Area css
+============================================================================================ */
+
+/* Offer Service Area css
+============================================================================================ */
+.offer_service_area{
+	background: #f0f2f5;
+	.studies_title{
+		h2{
+			margin-right: -25px;
+			font-size: 32px;
+		}
+		p{
+			padding-left: 50px;
+		}
+	}
+}
+.of_service_item{
+	overflow: hidden;
+	position: relative;
+	img{
+		transition: all 500ms ease;
+	}
+	&:before{
+		content: "";
+		height: 100%;
+		width: 100%;
+		background: rgba(40, 49, 120, .70);
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		transform: scaleY(0);
+		transform-origin: 50% 100%;
+		@include transition;
+		z-index: 2;
+	}
+	h4{
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		background: $blue;
+		margin-bottom: 0px;
+		color: #fff;
+		width: 100%;
+		padding: 0px 20px;
+		line-height: 60px;
+		font-size: 22px;
+		font-weight: 600;
+		z-index: 3;
+		span{
+			font-weight: 300;
+		}
+	}
+	&:hover{
+		img{
+			transform: scale(1.05);
+		}
+		&:before{
+			transform: scaleY(1);
+		}
+	}
+}
+.button_view_all{
+	text-align: center;
+	margin-top: 50px;
+	.main_btn{
+		padding: 0px 32px;
+	}
+}
+/* End Offer Service Area css
+============================================================================================ */
+
+/* What We Offer Area css
+============================================================================================ */
+.what_we_offer_area{
+	.main_title{
+		margin-bottom: 50px;
+	}
+}
+.offer_inner{
+	
+}
+.offer_item{
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(233, 233, 234);
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+	margin-bottom: 30px;
+	padding: 35px 25px 32px 25px;
+	.media{
+		.d-flex{
+			padding-right: 20px;
+			i{
+				font-size: 54px;
+				line-height: 50px;
+				color: $baseColor;
+				&:before{
+					font-size: 54px;
+				}	
+			}
+		}
+		.media-body{
+			h4{
+				font-size: 18px;
+				color: $dip;
+				margin-bottom: 15px;
+			}
+			p{
+				font-size: 15px;
+				line-height: 26px;
+			}
+		}
+	}
+}
+/* End What We Offer Area css
+============================================================================================ */
+
+/* Case Studies Six Area css
+============================================================================================ */
+.studies_six_area{
+	.studies_divider{
+		.col-lg-3{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.view_all_btn{
+			vertical-align: middle;
+			align-self: center;
+			text-align: right;
+			width: 100%;
+			margin-top: -15px;
+		}
+	}
+}
+.studies_six_inner{
+	.media{
+		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+		.d-flex{
+			box-shadow: 0px 3px 27px 0px rgba(0, 0, 0, 0.15);
+			position: relative;
+			overflow: hidden;
+			&:before{
+				content: "";
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				height: 100%;
+				background: #283178;
+				background: -moz-linear-gradient(top, #aab1bf 1%, #283178 100%);
+				background: -webkit-linear-gradient(top, #aab1bf 1%, #283178 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aab1bf', endColorstr='#283178',GradientType=0 );
+				z-index: 1;
+				opacity: .55;
+				-webkit-transition: all 300ms linear 0s;
+				-o-transition: all 300ms linear 0s;
+				transition: all 300ms linear 0s;
+			}
+			img{
+				box-shadow: 0px 3px 27px 0px rgba(0, 0, 0, 0.15);
+				filter: grayscale(100%);
+				transition: all 300ms linear 0s;
+			}
+			a{
+				position: absolute;
+				width: 100%;
+				left: 0px;
+				top: 50%;
+				transform: translateY(-50%);
+				text-align: center;
+				z-index: 2;
+			}
+		}
+		.media-body{
+			vertical-align: middle;
+			align-self: center;
+			padding-left: 40px;
+			padding-right: 25px;
+			h4{
+				font-size: 22px;
+				color: $blue;
+				line-height: 30px;
+				margin-bottom: 8px;
+			}
+			p{
+				font-size: 15px;
+				line-height: 26px;
+				margin-bottom: 0px;
+			}
+		}
+		&:hover{
+			.d-flex{
+				&:before{
+					opacity: 0;
+				}
+				> img{
+					filter: grayscale(0);
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+}
+/* End Case Studies Six Area css
+============================================================================================ */
+
+/* Practice Area css
+============================================================================================ */
+.practice_area{
+	
+}
+.practice_inner{
+	.practice_text{
+		h3{
+			color: $blue;
+			font-size: 32px;
+			position: relative;
+			margin-bottom: 60px;
+			&:before{
+				content: "";
+				background: #2c62bd;
+				width: 60px;
+				height: 2px;
+				position: absolute;
+				left: 0px;
+				bottom: -26px;
+			}
+		}
+		h5{
+			font-family: $lora;
+			font-style: italic;
+			color: $dip;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 28px;
+			margin-bottom: 15px;
+		}
+		p{
+			font-size: 16px;
+			margin-bottom: 35px;
+		}
+		.main_btn{
+			padding: 0px 37px;
+		}
+	}
+}
+.p_item_inner{
+	margin-bottom: -60px;
+}
+.practice_item{
+	margin-bottom: 60px;
+	.media{
+		.d-flex{
+			padding-right: 18px;
+			i{
+				color: #2c62bd;
+				font-size: 55px;
+				line-height: 50px;
+				&:before{
+					font-size: 55px;
+				}
+			}
+		}
+		.media-body{
+			h4{
+				font-size: 20px;
+				color: $blue;
+				margin-bottom: 12px;
+			}
+			p{
+				font-size: 16px;
+				font-weight: normal;
+				margin-bottom: 15px;
+			}
+			a{
+				font-size: 14px;
+				color: #2c62bd;
+				font-family: $pop;
+				font-weight: normal;
+				&:hover{
+					color: $baseColor;
+				}
+			}
+		}
+	}
+}
+/* End Practice Area css
+============================================================================================ */
+
+/* Question Area css
+============================================================================================ */
+.question_area{
+	background: #f0f2f5;
+}
+.question_inner{
+	
+}
+.our_company_inner{
+	h3{
+		color: $blue;
+		font-size: 22px;
+		font-weight: 600;
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+	p{
+		margin-bottom: 25px;
+	}
+	.nav{
+		li{
+			margin-bottom: 12px;
+			a{
+				position: relative;
+				padding-left: 30px;
+				margin-bottom: 0px;
+				font-size: 17px;
+				font-family: $pop;
+				font-weight: 500;
+				color: $blue;
+				@include transition;
+				img{
+					position: absolute;
+					left: 0px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				&:hover{
+					color: $baseColor;
+				}
+			}
+			&:last-child{
+				margin-bottom: 0px;
+			}
+		}
+	}
+}
+.ques_inner{
+	.accordion {
+		.card{
+			border: none;
+			border-radius: 0px;
+			background: #fff;
+			margin-bottom: 10px;
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+			&:last-child{
+				margin-bottom: 0px;
+			}
+			.card-header{
+				padding: 0px;
+				border: none;
+				border-radius: 0px;
+				button{
+					padding: 0px;
+					text-decoration: none;
+					font-family: $pop;
+					font-weight: 500;
+					font-size: 18px;
+					color: $dip;
+					padding-left: 65px;
+					position: relative;
+					padding-right: 10px;
+					padding-top: 13px;
+					padding-bottom: 13px;
+					background: #fff;
+					display: block;
+					width: 100%;
+					text-align: left;
+					i{
+						position: absolute;
+						left: 22px;
+						font-style: normal;
+						color: $blue;
+						font-size: 25px;
+						font-family: $open;
+						font-weight: bold;
+						display: none;
+						top: 50%;
+						transform: translateY(-50%);
+						text-shadow: none;
+						& + i{
+							display: inline-block;
+							color: #fff;
+							z-index: 3;
+							&:after{
+								content: "";
+								background: $blue;
+								height: 29px;
+								width: 29px;
+								position: absolute;
+								left:-10px;
+								top: 7px;
+								z-index: -1;
+							}
+						}
+					}
+					&.collapsed{
+						i{
+							display: inline-block;
+							& + i{
+								display: none;
+							}
+						}	
+					}
+				}
+			}
+			.card-body{
+				padding-left: 65px;
+				padding-right: 40px;
+				padding-top: 5px;
+				color: #8e8d8d;
+				font-family: $open;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 26px;
+				letter-spacing: .45px;
+				padding-bottom: 35px;
+			}
+		}
+	}
+}
+
+/* End Question Area css
+============================================================================================ */
+
+/* Recent Case Area css
+============================================================================================ */
+.recent_case_area{
+	.main_title{
+		margin-bottom: 45px;
+		h2{
+			margin-bottom: 5px;
+		}	
+	}
+}
+.recent_case_inner{
+	margin-bottom: -30px;
+}
+.r_case_item{
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 30px;
+	.r_case_img{
+		position: relative;
+		overflow: hidden;
+		&:before{
+			content: "";
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			background: #283178; /* Old browsers */
+			background: -moz-linear-gradient(top, #aab1bf 1%, #283178 100%); 
+			background: -webkit-linear-gradient(top, #aab1bf 1%,#283178 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aab1bf', endColorstr='#283178',GradientType=0 ); /* IE6-9 */
+			z-index: 1;
+			opacity: .55;
+			@include transition;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			background: rgba(40, 49, 120, .75);
+			opacity: 0;
+			@include transition;
+		}
+	}
+	.r_case_text{
+		position: absolute;
+		bottom: -134px;
+		left: 0px;
+		z-index: 2;
+		padding: 0px 25px;
+		transition: all 500ms ease;
+		h4{
+			font-size: 25px;
+			color: #fff;
+			line-height: 34px;
+			margin-bottom: 20px;
+		}
+		h5{
+			font-size: 13px;
+			font-family: $open;
+			font-weight: bold;
+			color: #b9bfd3;
+			text-transform: uppercase;
+			margin-bottom: 8px;
+		}
+		p{
+			font-size: 15px;
+			color: #b9bfd3;
+			margin-bottom: 5px;
+		}
+	}
+	&:hover{
+		.r_case_img{
+			&:before{
+				background: #283178;
+				opacity: .65;
+			}
+			&:after{
+				opacity: 1;
+			}
+		}
+		.r_case_text{
+			bottom: 22px;
+		}
+	}
+}
+/* End Recent Case Area css
+============================================================================================ */

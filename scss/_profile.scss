@@ -1,0 +1,36 @@
+/* Company Ceo Area css
+============================================================================================ */
+.company_ceo_area{
+	background: url(../img/ceo-bg.jpg) no-repeat fixed left center;
+	background-size: cover;
+	.company_ceo_text{
+		vertical-align: middle;
+		align-self: center;
+		padding-left: 35px;
+		h4{
+			font-size: 35px;
+			font-family: $pop;
+			font-weight: bold;
+			color: #fff;
+			margin-bottom: 25px;
+		}
+		h6{
+			font-size: 22px;
+			font-weight: 300;
+			font-family: $open;
+			color: #fff;
+			line-height: 28px;
+			margin-bottom: 25px;
+		}
+		p{
+			font-size: 17px;
+			color: #a7a7a6;
+			font-family: $open;
+			font-weight: normal;
+			line-height: 28px;
+			margin-bottom: 25px;
+		}
+	}
+}
+/* End Company Ceo Area css
+============================================================================================ */

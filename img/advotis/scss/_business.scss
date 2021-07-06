@@ -1,0 +1,542 @@
+/* Business Box Area css
+============================================================================================ */
+.business_boxes_area{
+	
+}
+.b_box_inner{
+	
+}
+.business_box_item{
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.07);
+	text-align: center;
+	padding: 30px 28px 50px 28px;
+	border-radius: 5px;
+	border: 1px solid #e4e4e4;
+	border-radius: 5px;
+	img{
+		margin-bottom: 25px;
+	}
+	h4{
+		font-size: 20px;
+		font-weight: 600;
+		color: $blue;
+		margin-bottom: 12px;
+	}
+	p{
+		font-size: 15px;
+		line-height: 26px;
+	}
+}
+/* Business Box Area css
+============================================================================================ */
+
+/* Automobiles Area css
+============================================================================================ */
+.automobiles_inner{
+	
+}
+.automobile_sector{
+	img{
+		margin-bottom: 55px;
+	}
+	h3{
+		color: $blue;
+		font-size: 28px;
+		margin-bottom: 22px;
+	}
+	p{
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+	.left{}
+	.right{
+		padding-left: 30px;
+	}
+}
+.mobile_experience{
+	margin-top: 40px;
+	.main_title{
+		margin-bottom: 35px;
+		h2{
+			font-size: 26px;
+		}
+	}
+	&.color_full{
+		.ex_item{
+			background: #2e3a73;
+			color: #fff;
+			h4{
+				color: #fff;
+			}
+			&.red{
+				background: #f34b4b;
+				border-top-color: #991212;
+			}
+			&.green{
+				background: #45ae7d;
+				border-top-color: #1d5b3e;
+			}
+		}
+	}
+}
+.ex_item{
+	background: #f2f2f3;
+	padding: 40px 35px 50px 30px;
+	border-top: 7px solid $blue;
+	h4{
+		color: $blue;
+		font-size: 22px;
+		font-weight: 600;
+		margin-bottom: 16px;
+	}
+	p{
+		margin-bottom: 0px;
+	}
+	&.red{
+		border-color: $baseColor;
+	}
+	&.green{
+		border-color: #45ae7d;
+	}
+}
+.edge_right_text{
+	padding-left: 55px;
+}
+.edge_single_text{
+	h3{
+		color: $blue;
+		font-size: 28px;
+		line-height: 44px;
+		margin-bottom: 20px;
+		font-family: $pop;
+	}
+	p{
+		margin-bottom: 25px;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+}
+.groth_brains{
+	margin-top: 60px;
+	.groth_img{
+		margin-left: -6px;
+	}
+	.main_title{
+		margin-bottom: 40px;
+	}
+}
+.groth_items{
+	max-width: 515px;
+	.media{
+		margin-bottom: 52px;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+		.d-flex{
+			max-width: 90px;
+			width: 100%;
+			vertical-align: middle;
+			align-self: center;
+		}
+		.media-body{
+			vertical-align: middle;
+			align-self: center;
+			h4{
+				color: $blue;
+				font-size: 20px;
+				font-weight: 600;
+				margin-bottom: 12px;
+			}
+			p{
+				margin-bottom: 0px;
+			}
+		}
+	}
+}
+.tab_typical{
+	margin-top: 55px;
+	.single_title{
+		margin-bottom: 30px;
+		font-size: 26px;
+	}
+	.nav.nav-tabs{
+		border-bottom: 1px solid #d4d4d4;
+		li{
+			a{
+				border-radius: 0px;
+				border: 1px solid #d4d4d4;
+				border-bottom: 0px;
+				border-right: 0px;
+				padding: 0px 24px;
+				line-height: 46px;
+				color: $blue;
+				font-size: 16px;
+				font-weight: normal;
+				font-family: $open;
+				position: relative;
+				&:before{
+					content: "";
+					height: 2px;
+					background: $baseColor;
+					position: absolute;
+					left: 0px;
+					top: -1px;
+					width: 100%;
+					opacity: 0;
+					@include transition;
+				}
+				&.active{
+					&:before{
+						opacity: 1;
+					}
+				}
+			}
+			&:last-child{
+				a{
+					border-right: 1px solid #d4d4d4;
+				}
+			}
+		}
+	}
+	.tab-content{
+		border: 1px solid #d4d4d4;
+		border-top: 0px;
+		padding: 35px 30px 45px 30px;
+		.nav{
+			li{
+				margin-bottom: 15px;
+				a{
+					padding-left: 18px;
+					position: relative;
+					font-size: 16px;
+					font-family: $open;
+					font-weight: normal;
+					color: $pfont;
+					@include transition;
+					display: block;
+					&:before{
+						content: "";
+						height: 6px;
+						width: 6px;
+						border-radius: 50%;
+						background: #8b91af;
+						position: absolute;
+						left: 0px;
+						top: 12px;
+					}
+					&:hover{
+						color: $blue;
+					}
+				}
+				&:last-child{
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}
+/* End Automobiles Area css
+============================================================================================ */
+
+/* Chemical Area css
+============================================================================================ */
+.financial_testi{
+	background: #f2f2f3;
+	padding: 55px 45px 45px 45px;
+	border-top: 4px solid $blue;
+	margin-top: 65px;
+	.single_title{
+		font-size: 26px;
+		margin-bottom: 25px;
+	}
+	.f_testi_slider{
+		.media{
+			.d-flex{
+				padding-right: 25px;
+				i{
+					font-style: normal;
+					color: #1f49c3;
+					font-size: 120px;
+					font-weight: 600;
+					font-family: $pop;
+					line-height: normal;
+					height: 38px;
+					margin-top: -26px;
+				}
+			}
+			.media-body{
+				p{
+					margin-bottom: 20px;
+				}
+				h3{
+					color: $blue;
+					font-size: 18px;
+					font-family: $play;
+					font-weight: normal;
+					font-style: italic;
+					margin-bottom: 0px;
+					a{
+						font-family: $open;
+						font-weight: normal;
+						font-style: normal;
+						color: #4772ef;
+						font-size: 15px;
+					}
+				}
+			}
+		}
+		.owl-dots{
+			text-align: right;
+			margin-top: 10px;
+			.owl-dot{
+				height: 7px;
+				width: 7px;
+				background: #b4b6c9;
+				border-radius: 50%;
+				margin-right: 7px;
+				@include transition;
+				&:last-child{
+					margin-right: 0px;
+				}
+				&:hover, &.active{
+					background: #1f49c3;
+				}
+			}
+		}
+	}
+}
+.cons_img{
+	position: relative;
+	margin-bottom: 55px;
+	img{
+		margin-bottom: 0px;
+	}
+	h4{
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		transform: translateY(-50%);
+		max-width: 370px;
+		width: 100%;
+		background: #fff;
+		text-align: right;
+		margin-bottom: 0px;
+		padding: 32px 28px 32px 0px;
+		color: $blue;
+		font-size: 30px;
+	}
+	&.goods_img{
+		h4{
+			top: auto;
+			bottom: 0px;
+			transform: translateY(0%);
+			background: rgba(255, 255, 255, .90);
+			max-width: 316px;
+			font-size: 35px;
+			padding-top: 15px;
+			padding: 25px 30px 25px 20px;
+		}
+	}
+}
+
+/* End Chemical Area css
+============================================================================================ */
+
+/* Business Process Area css
+============================================================================================ */
+.business_process_area{
+	background: #f0f2f5;
+	&.process_mg_top{
+		padding-top: 278px;
+		margin-top: -178px;
+	}
+}
+.process_text{
+	position: relative;
+	&:before{
+		content: "";
+		width: 1px;
+		height: 96px;
+		background: #a6a6a6;
+		position: absolute;
+		left: 50%;
+		bottom: 30px;
+	}
+	h3{
+		color: $blue;
+		line-height: 48px;
+		font-size: 32px;
+		margin-bottom: 18px;
+	}
+	p{
+		max-width: 935px;
+		margin: 0px auto 32px;;
+	}
+	.main_btn{
+		margin-bottom: 155px;
+	}
+}
+.process_items{
+	.company_item{
+		.company_text{
+			padding: 50px 40px 50px 40px;
+			h4{
+				font-size: 24px;
+				line-height: 33px;
+				margin-bottom: 22px;
+			}
+		}
+	}
+}
+.process_action{
+	margin-bottom: 90px;
+	h4{
+		font-size: 28px;
+		line-height: 44px;
+		color: $blue;
+		margin-bottom: 30px;
+	}
+	.left{
+		p{
+			margin-bottom: 30px;
+			&:last-child{
+				margin-bottom: 0px;
+			}
+		}
+	}
+	.right{
+		p{
+			margin-bottom: 20px;
+		}
+		.more_btn{
+			text-decoration: underline;
+		}
+	}
+}
+.studies_item.gray_bg{
+	background: #f0f0f1;
+	.studies_content{
+		border: none;
+	}
+}
+.conversion_area{
+	.center_title{
+		margin-bottom: 90px;
+		h2{
+			font-size: 40px;
+			margin-bottom: 18px;
+		}
+		h5{
+			color: $dip;
+			font-style: italic;
+			font-family: $play;
+			font-size: 25px;
+			font-weight: normal;
+			margin-bottom: 10px;
+		}
+		p{
+			max-width: 740px;
+			margin-bottom: 0px;
+		}
+	}
+}
+/* End Business Process Area css
+============================================================================================ */
+
+/* Performance Area css
+============================================================================================ */
+.performance_area{
+	.process_action{
+		margin-top: 60px;
+	}
+}
+.performance_items{
+	.performance_title{
+		margin-bottom: 35px;
+		h3{
+			font-size: 28px;
+			color: $blue;
+		}
+		p{
+			margin-bottom: 0px;
+		}
+	}
+	.process_items{
+		.company_item{
+			background: #f0f2f5;
+		}
+	}
+}
+.work_together_area{
+	text-align: center;
+	background: #f0f2f5;
+	.together_text{
+		h4{
+			color: $blue;
+			font-size: 32px;
+			line-height: 48px;
+			margin-bottom: 15px;
+		}
+		p{
+			max-width: 960px;
+			margin: 0px auto 30px;
+			letter-spacing: .32px;
+		}
+	}
+}
+.performance_fact{
+	background: #fff;
+	.facts_title{
+		h2{
+			color: $blue;
+		}
+		p{
+			color: $pfont;
+		}
+	}
+	.fact_item{
+		border: none;
+	}
+}
+.conversion_area.pad_top{
+	padding-top: 100px;
+}
+/* End Performance Area css
+============================================================================================ */
+
+/* Strategy Area css
+============================================================================================ */
+.strategy_fact{
+	background: 
+	linear-gradient(
+      rgba(29, 33, 56, 0.75),
+      rgba(29, 33, 56, 0.75),
+    ),
+    url(../img/fact-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	.facts_title{
+		
+	}
+	.fact_item{
+		background: #f2f2f3;
+		h4{
+			color: $blue;
+		}
+		p{
+			color: $pfont;
+		}
+		border-top-color: $baseColor;
+		&.basecolor{
+			border-top-color: $blue;
+		}
+		&.green{
+			border-top-color: #45ae7d;
+		}
+	}
+}
+/* End Strategy Area css
+============================================================================================ */

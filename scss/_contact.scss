@@ -1,0 +1,764 @@
+/* Map Area css
+============================================================================================ */
+.map_area{
+	box-shadow: 0px 0px 49px 0px rgba(0, 0, 0, .40);
+	.mapBox{
+		min-height: 340px;
+	}
+}
+.map_area_two{
+	.mapBox2{
+		min-height: 470px;
+		margin-bottom: 100px;
+	}
+}
+/* End Map Area css
+============================================================================================ */
+
+/* Conversion Area css
+============================================================================================ */
+.conversion_area{
+	padding-top: 80px;
+	.conversion_inner{
+		box-shadow: 0px 0px 49px 0px rgba(0, 0, 0, 0.18);
+		border-top: 5px solid $blue;
+		margin-bottom: -80px;
+		z-index: 2;
+		position: relative;
+		background: #fff;
+		.conversion_text{
+			padding-left: 45px;
+			padding-top: 45px;
+			margin-bottom: 65px;
+			h3{
+				color: $blue;
+				font-size: 30px;
+				font-family: $pop;
+				font-weight: 600;
+				margin-bottom: 15px;
+			}
+			h4{
+				font-size: 30px;
+				font-weight: normal;
+				font-family: $play;
+				font-style: italic;
+				margin-bottom: 25px;
+			}
+			.nice-select{
+				margin-bottom: 65px;
+				width: 100%;
+				border: none;
+				border-bottom: 1px solid #797979;
+				border-radius: 0px;
+				padding-left: 0px;
+				padding-right: 0px;
+				height: 45px;
+				span{
+					font-size: 18px;
+					font-family: $pop;
+					font-weight: normal;
+					color: $pfont;
+				}
+				&:after{
+					border: none;
+					transform: rotate(0);
+					content: "\f0d7";
+					font: normal normal normal 14px/1 FontAwesome;
+					color: #000;
+				}
+			}
+		}
+		.conversion_subs{
+			padding-left: 50px;
+			padding-right: 50px;
+			p{
+				font-size: 16px;
+				line-height: 28px;
+				padding-right: 20px;
+				margin-top: 45px;
+				margin-bottom: 35px;
+			}
+			.input-group{
+				input{
+					border-radius: 0px;
+					border-color: #e8e6ee;
+					height: 50px;
+					background: #f7f7f7;
+					padding: 0px 20px;
+					font-size: 16px;
+					font-family: $open;
+					font-weight: inherit;
+					color: $pfont;
+					outline: none;
+					box-shadow: none;
+					@include placeholder{
+						font-size: 16px;
+						font-family: $open;
+						font-weight: inherit;
+						color: $pfont;
+					}
+				}
+			}
+		}
+	}
+}
+/* End Conversion Area css
+============================================================================================ */
+
+/* Contact Properties Area css
+============================================================================================ */
+.contact_btn_area{
+	background: $blue;
+	padding: 45px 0px;
+	.contact_text{
+		display: flex;
+		justify-content: space-between!important;
+		h4{
+			color: #fff;
+			font-size: 36px;
+			font-family: $pop;
+			font-weight: bold;
+			margin-bottom: 0px;
+			a{
+				color: $baseColor;
+				text-decoration: underline;
+				font-weight: normal;
+			}	
+		}
+		.white_btn{
+			line-height: 54px;
+			padding: 0px 45px;
+		}
+	}
+}
+/* End Contact Properties Area css
+============================================================================================ */
+
+/* Get In Touch Area css
+============================================================================================ */
+.get_in_touch_area{
+	background: #f5f5f5;
+}
+.home_map{
+	max-width: 430px;
+	margin: 80px auto 0px;
+	-webkit-box-shadow: 0px 0px 44px -19px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 44px -19px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 44px -19px rgba(0,0,0,0.5);
+	.mapBox{
+		min-height: 380px;
+	}
+}
+.pad_290{
+	padding-top: 290px;
+}
+.get_in_form{
+	.form-group{
+		&:last-child{
+			margin-bottom: 0px;
+		}
+		input{
+			height: 50px;
+			padding: 0px 20px;
+			border: none;
+			background: #fff;
+			border-radius: 0px;
+			outline: none;
+			box-shadow: none;
+			font-size: 15px;
+			font-family: $open;
+			font-weight: normal;
+			color: rgba(0, 0, 0, .7);
+			@include placeholder{
+				font-size: 15px;
+				font-family: $open;
+				font-weight: normal;
+				color: rgba(0, 0, 0, .7);
+			}
+		}
+		label{
+			font-size: 13px;
+			font-family: $open;
+			color: $pfont;
+		}
+		.subject{
+			width: 100%;
+			height: 50px;
+			border: none;
+			border-radius: 0px;
+			background: #fff;
+			line-height: 50px;
+			padding: 0px 20px;
+			outline: none !important;
+			box-shadow: none !important;
+			span{
+				color: rgba(0, 0, 0, .7);
+			}	
+			&:after{
+				content: "\f0dd";
+				font: normal normal normal 16px/1 FontAwesome;
+				transform: rotate(0);
+				border: none;
+				margin-top: -11px;
+				right: 23px;
+				color: #ababab;
+			}
+			.list{
+				width: 100%;
+				border-radius: 0px;
+				border: none; 
+			}
+		}
+		textarea{
+			height: 186px;
+			padding: 20px 20px;
+			border: none;
+			background: #fff;
+			border-radius: 0px;
+			outline: none;
+			box-shadow: none;
+			font-size: 15px;
+			font-family: $open;
+			font-weight: normal;
+			color: rgba(0, 0, 0, .7);
+			resize: none;
+			@include placeholder{
+				font-size: 15px;
+				font-family: $open;
+				font-weight: normal;
+				color: rgba(0, 0, 0, .7);
+			}
+		}
+		.submit_btn{
+			width: auto;
+			height: 50px;
+			padding: 0px 35px;
+			margin-top: 15px;
+		}
+	}
+}
+/* End Get In Touch Area css
+============================================================================================ */
+
+/* Call Back Area css
+============================================================================================ */
+.call_back_area{
+	background: #202034;
+}
+.call_back_form{
+	margin-bottom: -30px;
+	.form-group{
+		margin-bottom: 30px;
+		input{
+			height: 50px;
+			background: #fff;
+			border-radius: 0px;
+			border: 1px solid #fff;
+			padding: 0px 20px;
+			outline: none;
+			box-shadow: none;
+			font-size: 16px;
+			font-family: $open;
+			color: #999;
+			font-weight: normal;
+			-webkit-box-shadow: 0px 0px 38px -42px rgba(0,0,0,0.48);
+			-moz-box-shadow: 0px 0px 38px -42px rgba(0,0,0,0.48);
+			box-shadow: 0px 0px 38px -42px rgba(0,0,0,0.48);
+			@include placeholder{ 
+				font-size: 16px;
+				font-family: $open;
+				color: #999; 
+				font-weight: normal; 
+			}
+		}
+		label{
+			font-size: 13px;
+			font-family: $open;
+			color: #fff;
+		}
+		textarea{
+			height: 250px;
+			background: #fff;
+			border-radius: 0px;
+			border: 1px solid #fff;
+			padding: 20px 20px;
+			outline: none;
+			box-shadow: none;
+			font-size: 16px;
+			font-family: $open;
+			color: #999999;
+			font-weight: normal;
+			resize: none;
+			-webkit-box-shadow: 0px 0px 38px -42px rgba(0,0,0,0.48);
+			-moz-box-shadow: 0px 0px 38px -42px rgba(0,0,0,0.48);
+			box-shadow: 0px 0px 38px -42px rgba(0,0,0,0.48);
+			@include placeholder{
+				font-size: 16px;
+				font-family: $open;
+				color: #999999;
+				font-weight: normal;
+			}
+		}
+		.discuss{
+			height: 50px;
+			border: 1px solid #fff;
+			width: 100%;
+			border-radius: 0px;
+			line-height: 50px;
+			padding: 0px 20px;
+			background: #fff;
+			color: #999;
+			span{
+				font-size: 16px;
+				font-family: $open;
+				color: #999999;
+				font-weight: normal;
+				opacity: 1;
+			}
+			&:after{
+				content: "\f0d7";
+				font: normal normal normal 16px/1 FontAwesome;
+				border: none;
+				transform: rotate(0);
+				margin-top: -6px;
+				right: 20px;
+			}
+			.list{
+				width: 100%;
+				border-radius: 0px;
+			}
+		}
+		.submit_btn{
+			border: none;
+			height: 50px;
+			line-height: 50px;
+			&:hover{
+				background: #fff;
+				color: $baseColor;
+			}
+		}
+	}
+}
+/* End Call Back Area css
+============================================================================================ */
+
+/* Get Touch Form Area css
+============================================================================================ */
+.get_touch_form_area{
+	background: #eceff3;
+	.call_back_form{
+		.form-group{
+			margin-bottom: 20px;
+			input{
+				color: rgba(0, 0, 0, .70);
+				font-size: 15px;
+				font-family: $open;
+				@include placeholder{
+					color: rgba(0, 0, 0, .70);
+					font-size: 15px;
+					font-family: $open;
+				}
+			}
+			label{
+				font-size: 13px;
+				font-family: $open;
+				color: $pfont;
+			}
+			textarea{
+				color: rgba(0, 0, 0, .70);
+				font-size: 15px;
+				font-family: $open;
+				@include placeholder{
+					color: rgba(0, 0, 0, .70);
+					font-size: 15px;
+					font-family: $open;
+				}
+			}
+			.discuss{
+				span{
+					color: rgba(0, 0, 0, .70);
+					font-size: 15px;
+					font-family: $open;
+				}
+			}
+			.submit_btn{
+				height: 58px;
+				padding: 0px 52px;
+				width: auto;
+				margin-top: 20px;
+				&:hover{
+					background: $blue;
+					color: #fff;
+				}
+			}
+		}
+	}
+	&.contact_page{
+		background: #fff;
+		.single_title{
+			margin-bottom: 45px;
+		}
+		.call_back_form{
+			.form-group{
+				margin-bottom: 30px;
+				input{
+					color: rgba(0, 0, 0, .70);
+					font-size: 15px;
+					font-family: $open;
+					border: 1px solid #d8d8d8;
+					@include placeholder{
+						color: rgba(0, 0, 0, .70);
+						font-size: 15px;
+						font-family: $open;
+					}
+				}
+				textarea{
+					color: rgba(0, 0, 0, .70);
+					font-size: 15px;
+					font-family: $open;
+					border: 1px solid #d8d8d8;
+					@include placeholder{
+						color: rgba(0, 0, 0, .70);
+						font-size: 15px;
+						font-family: $open;
+					}
+				}
+				.discuss{
+					border: 1px solid #d8d8d8;
+					span{
+						color: rgba(0, 0, 0, .70);
+						font-size: 15px;
+						font-family: $open;
+					}
+				}
+				.submit_btn{
+					height: 58px;
+					padding: 0px 52px;
+					width: auto;
+					margin-top: 10px;
+				}
+			}
+		}
+		.address_area{
+			background: #eceff3;
+			margin-left: 70px;
+			height: 100%;
+			.address_text{
+				.tel{
+					margin-bottom: 15px;
+					&:last-child{
+						margin-bottom: 0px;
+					}
+					a{
+						display: block;
+						margin-top: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+.address_area{
+	background: #fff;
+	height: calc(100% - 90px);
+	-webkit-box-shadow: 0px 0px 38px -42px rgba(0,0,0,0.48);
+	-moz-box-shadow: 0px 0px 38px -42px rgba(0,0,0,0.48);
+	box-shadow: 0px 0px 38px -42px rgba(0,0,0,0.48);
+	.address_text{
+		border-bottom: 1px solid #d1d8e1;
+		padding: 35px 50px;
+		margin-bottom: 0px;
+		&:last-child{
+			border: none;
+		}
+		.add{
+			color: $blue;
+			font-size: 20px;
+			margin-bottom: 7px;
+			font-weight: bold;
+		}
+		p{
+			font-size: 15px;
+			line-height: 28px;
+			margin-bottom: 12px;
+		}
+		.tel{
+			color: $blue;
+			font-size: 16px;
+			font-weight: 600;
+			font-family: $open;
+			margin-bottom: 0px;
+			&:last-child{
+				margin-bottom: 0px;
+			}
+			a{
+				color: $pfont;
+				font-weight: normal;
+				font-size: 16px;
+				font-family: $open;
+			}
+		}
+	}
+}
+
+/* End Get Touch Form Area css
+============================================================================================ */
+
+/* Faq Area css
+============================================================================================ */
+.faq_area{
+	.main_title{
+		
+	}
+	.input-group{
+		position: relative;
+		display: block;
+		margin-bottom: 65px;
+		input{
+			background: #fafafa;
+			border: 1px solid #cecece;
+			border-radius: 3px !important;
+			height: 60px;
+			outline: none;
+			box-shadow: none;
+			width: 100%;
+			padding: 0px 30px;
+			font-size: 16px;
+			font-family: $open;
+			color: rgba(0, 0, 0, .60);
+			@include placeholder{
+				font-size: 16px;
+				font-family: $open;
+				color: rgba(0, 0, 0, .60);
+			}
+		}
+		.input-group-append{
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			.btn{
+				border: none;
+				padding: 0px;
+				color: rgba(0, 0, 0, .60);
+			}
+		}
+	}
+}
+.faq_area{
+	.question_inner{
+		margin-top: -20px;
+		margin-bottom: -20px;
+		.accordion{
+			&.left_side{
+				padding-right: 45px;
+			}
+			.card{
+				border: none;
+				border-radius: 0px;
+				.card-header{
+					border: none;
+					background: transparent;
+					padding: 20px 0px;
+					button{
+						padding: 0px 0px 0px 26px;
+						text-decoration: none;
+						color: $blue;
+						font-size: 20px;
+						font-family: $pop;
+						font-weight: 600;
+						font-style: normal;
+						text-align: left;
+						position: relative;
+						i{
+							position: absolute;
+							left: 0px;
+							display: none;
+							font-style: normal;
+							& + i{
+								display: inline-block;
+							}
+						}
+						&.collapsed{
+							i{
+								display: inline-block;
+								& + i{
+									display: none;
+								}
+							}
+						}
+					}
+				}
+				.card-body{
+					padding: 5px 0px 5px 26px;
+				}
+			}
+		}
+	}
+}
+
+/* End Faq Area css
+============================================================================================ */
+
+/* Question Form Area css
+============================================================================================ */
+.answer_question_area{
+	background: $blue;
+	.single_title{
+		margin-bottom: 45px;
+	}
+	.call_back_form{
+		.form-group{
+			input{
+				background: transparent;
+				border: none;
+				border-bottom: 2px solid #4d558d;
+				padding: 0px;
+				color: rgba(255, 255, 255, .70);
+				height: 68px;
+				@include placeholder{
+					color: rgba(255, 255, 255, .70);
+				}
+			}
+			textarea{
+				background: transparent;
+				border: none;
+				border-bottom: 2px solid #4d558d;
+				padding: 0px;
+				color: rgba(255, 255, 255, .70);
+				height: 175px;
+				@include placeholder{
+					color: rgba(255, 255, 255, .70);
+				}
+			}
+			.submit_btn{
+				padding: 0px 48px;
+				width: auto;
+				height: 57px;
+				line-height: 57px;
+				margin-top: 20px;
+			}
+		}
+	}
+}
+/* End Question Form Area css
+============================================================================================ */
+
+/* Location Area css
+============================================================================================ */
+.locations_area{
+	
+}
+.location_inner{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.location_item{
+	background: #fff;
+	box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+	padding: 30px 55px;
+	margin-bottom: 60px;
+	&:last-child{
+		margin-bottom: 0px;
+	}
+	.left_text{
+		vertical-align: middle;
+		align-self: center;
+		.loc{
+			color: $blue;
+			font-size: 32px;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+		p{
+			font-size: 16px;
+			line-height: 28px;
+			margin-bottom: 30px;
+			color: $pfont;
+		}
+		.tel{
+			font-weight: normal;
+			font-family: $open;
+			font-size: 16px;
+			color: $pfont;
+			margin-bottom: 0px;
+			a{
+				font-weight: normal;
+				font-family: $open;
+				font-size: 16px;
+				color: $pfont;
+			}
+		}
+		.em{
+			font-weight: normal;
+			font-family: $open;
+			font-size: 16px;
+			color: $pfont;
+			margin-bottom: 0px;
+			a{
+				font-weight: normal;
+				font-family: $open;
+				font-size: 16px;
+				color: $baseColor;
+			}
+			&:last-child{
+				margin-bottom: 0px;
+			}
+		}
+	}
+	.right_map{
+		max-width: 370px;
+		width: 100%;
+		height: 275px;
+		.mapBox2{
+			height: 100%;
+		}
+	}
+}
+/* End Location Area css
+============================================================================================ */
+
+/* Contact Success and error Area css
+============================================================================================ */
+.modal-message{
+    .modal-dialog{
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) !important; 
+        margin: 0px;
+        max-width: 500px;
+        width: 100%;
+        .modal-content{
+			border: none;
+            .modal-header{
+                text-align: center;
+                display: block;
+                border-bottom: none;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                .close{
+                    position: absolute;
+                    right: -15px;
+                    top: -15px;
+                    padding: 0px;
+                    color: #fff;
+                    opacity: 1;
+                    cursor: pointer;
+                }
+                h2{
+                    display: block;
+                    text-align: center;
+                    color: $baseColor;
+                    padding-bottom: 5px;
+					font-family: $play;
+                }
+                p{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+/* End Contact Success and error Area css
+============================================================================================ */

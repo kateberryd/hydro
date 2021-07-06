@@ -1,0 +1,346 @@
+/* Testimonials Area css
+============================================================================================ */
+.testimonials_area{
+	background: #f4f5f8;
+	padding-top: 80px;
+	padding-bottom: 90px;
+	.owl-dots{
+		text-align: center;
+		margin-top: 55px;
+		.owl-dot{
+			display: inline-block;
+			height: 6px;
+			width: 10px;
+			border-radius: 3px;
+			background: #bbbdc5;
+			margin-right: 10px;
+			@include transition;
+			&:last-child{
+				margin-right: 0px;
+			}
+			&.active{
+				width: 24px;
+				background: #1f49c3;
+			}
+		}
+	}
+}
+.testi_item{
+	padding-left: 70px;
+	position: relative;
+	p{
+		margin-bottom: 28px;
+		span{
+			color: #1f49c3;
+			font-size: 120px;
+			font-family: $pop;
+			font-weight: 600;
+			line-height:normal; 
+			position: absolute;
+			left: 0px;
+			top: -28px;
+		}
+	}
+	.media{
+		.d-flex{
+			padding-right: 20px;
+		}
+		.media-body{
+			vertical-align: middle;
+			align-self: center;
+			h4{
+				font-size: 20px;
+				font-family: $play;
+				font-style: italic;
+				color: $blue;
+				font-weight: normal;
+				margin-bottom: 5px;
+			}
+			p{
+				margin-bottom: 0px;
+				font-size: 15px;
+				color: #4772ef;
+				font-family: $open;
+			}
+		}
+	}
+}
+.testi_two_area{
+	background: url(../img/testimonials/testi-bg.jpg) no-repeat fixed center center;
+	background-size: cover;
+	position: relative;
+	padding: 90px 0px 90px 0px;
+	&:before{
+		content: "";
+		background: rgba(208, 67, 67, .88);
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+	}
+	.testi_tt{
+		color: #fff; 
+		font-weight: bold;
+		font-size: 34px;
+		margin-bottom: 40px; 
+		font-family: $pop;
+		margin-left: 185px;
+	}
+	.testi_two_slider{
+		.item{
+			.media{
+				.d-flex{
+					flex-wrap: wrap;
+					margin-right: 30px;
+					position: relative;
+					&:before{
+						content: "";
+						height: 105px;
+						width: 1px;
+						position: absolute;
+						right: 13px;
+						top: 0px;
+						background: rgba(255, 255, 255, .34);
+					}
+					img{
+						width: auto;
+					}
+					i{
+						color: #fff;
+						text-align: center;
+						display: block;
+						width: 100%;
+						font-size: 120px;
+						font-family: "arial";
+						font-style: normal;
+						font-weight: bold;
+						line-height: 90px;
+						max-width: 100px;
+						margin-top: 30px;
+						height: 36px;
+					}
+				}
+				.media-body{
+					p{
+						line-height: 28px;
+						font-family: $open;
+						font-weight: 300;
+						font-size: 20px;
+						color: #fff;
+						letter-spacing: .60px;
+						padding-right: 55px;
+						margin-bottom: 25px;
+					}
+					h5{
+						color: #fff;
+						margin-bottom: 0px;
+						color: #fff;
+						font-family: $pop;
+						font-style: italic;
+						font-weight: normal;
+					}
+				}
+			}
+		}
+	}
+	.test_arrow{
+		position: absolute;
+		right: 0px;
+		top: -95px;
+		.owl-prev, .owl-next{
+			height: 52px;
+			width: 52px;
+			border-radius: 50%;
+			text-align: center;
+			border: 1px solid rgba(255, 255, 255, .34);
+			background: transparent;
+			color: #fff;
+			font-size: 22.47px;
+			@include transition;
+			&:hover{
+				background: $baseColor;
+				border-color: $baseColor;
+				color: #fff;
+			}
+		}
+		.owl-prev{
+			margin-right: 18px;
+		}
+		.owl-next{}
+	}
+	&.testi_last{
+		background: #eceff3;
+		&.pad_all{
+			padding-top: 120px;
+			padding-bottom: 190px;
+		}
+		&:before{
+			display: none;
+		}
+		.testi_two_slider{
+			.item{
+				.media{
+					.d-flex{
+						padding-left: 60px;
+						padding-right: 40px;
+						margin-right: 50px;
+						padding-top: 65px;
+						padding-bottom: 65px;
+						img{
+							box-shadow: 0px 0px 92px 0px rgba(0, 0, 0, 0.28);
+						}
+						&:before{
+							background: #e3e6e9;
+							top: 50px;
+						}
+					}
+					.media-body{
+						padding-top: 40px;
+						p{
+							color: $blue;
+							font-size: 22px;
+							font-family: $play;
+							font-style: italic;
+							line-height: 33px;
+						}
+						h5{
+							color: $baseColor;
+							font-size: 17px;
+							font-family: $pop;
+							font-weight: 500;
+							font-style: normal;
+						}
+						h6{
+							font-size: 15px;
+							font-family: $lato;
+							font-style: italic;
+							color: #5a6470;
+							margin-bottom: 0px;
+						}
+					}
+				}
+			}
+			.test_arrow{
+				top: -39px;
+				right: 70px;
+				.owl-prev, .owl-next{
+					height: 40px;
+					width: 40px;
+					background: #fff;
+					color: $baseColor;
+					border: 1px solid #d8d8d9;
+					font-size: 14px;
+					font-weight: bold;
+					line-height: 38px;
+					
+				}
+				.owl-prev{
+					i{
+						&:before{
+							content: "\e879";
+							font-family: 'Linearicons-Free';
+							font-weight: bold;
+						}
+					}
+				}
+				.owl-next{
+					i{
+						&:before{
+							content: "\e87a";
+							font-family: 'Linearicons-Free';
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* End Testimonials Area css
+============================================================================================ */
+
+/* Testimonials Three Area css
+============================================================================================ */
+.testimonials_three{
+	background: #c4c3c1;
+	position: relative;
+	min-height: 516px;
+	display: flex;
+	.testi_bg{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+	}
+	.container{
+		vertical-align: middle;
+		align-self: center;
+	}
+	.col-lg-7{
+		
+	}
+}
+.testi_three{
+	
+}
+.testi_three_slider{
+	background: #fff;
+	padding: 55px 65px 35px 65px;
+	.item{
+		p{
+			font-size: 18px;
+			line-height: 28px;
+			margin-bottom: 20px;
+		}
+		.media{
+			.d-flex{
+				padding-right: 25px;
+			}
+			.media-body{
+				vertical-align: middle;
+				align-self: center;
+				h4{
+					font-size: 20px;
+					font-family: $pop;
+					font-weight: 600;
+					color: $pfont; 
+					margin-bottom: 7px;
+				}
+				h5{
+					font-size: 17px;
+					font-family: $lato;
+					font-style: italic;
+					font-weight: normal;
+					color: $pfont;
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+	.test_arrow{
+		position: absolute;
+		right: 28px;
+		bottom: 50px;
+		.owl-prev, .owl-next{
+			height: 36px;
+			width: 36px;
+			border-radius: 50%;
+			background: $blue;
+			color: #fff;
+			border-color: $blue;
+			font-size: 20px;
+			@include transition;
+			&:hover{
+				background: $baseColor;
+				border-color: $baseColor;
+			}
+		}
+		.owl-prev{
+			margin-right: 22px;
+		}
+		.owl-next{}
+	}
+}
+/* End Testimonials Three Area css
+============================================================================================ */
