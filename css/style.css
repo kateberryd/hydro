@@ -1429,7 +1429,7 @@ button:focus {
 }
 
 .main_slider_area.bg_slider {
-  background: url(../img/home-slider/bg2.jpg) no-repeat scroll center center;
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.459)), url(../img/home-slider/bg2.jpg)  no-repeat scroll center center;
   background-size: cover;
 }
 
